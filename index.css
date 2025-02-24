@@ -1,0 +1,298 @@
+body {
+    background-color: #986940;
+    font-family: Arial, sans-serif;
+}
+
+.sec1 {
+    width: 85%;
+    height: 230px;
+    margin: 35px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div1 {
+    width: 48%;
+    height: 215px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 1%;
+}
+
+.div2 {
+    width: 48%;
+    height: 215px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 1%;
+}
+
+h1 {
+    font-size: 35px;
+    color: #F8E9E9;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: -35px;
+}
+
+h2 {
+    font-size: 25px;
+    color: #F8E9E9;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.learn{
+    width: 185px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #d4bfa7;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+a{
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.translator-container {
+    width: 100%;
+    height: 260px;
+}
+
+.textarea1 {
+    width: 94%;
+    height: 175px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    outline: none;
+    color: gray;
+}
+
+.textarea2 {
+    width: 94%;
+    height: 175px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 15px;
+    outline: none;
+    color: gray;
+
+}
+
+.sec2 {
+    width: 97%;
+    height: 75px;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.as1 {
+    width: 75%;
+    height: 70px;
+    margin-top: 0.2%;
+    margin-left: 0.5%;
+}
+
+.btn1 {
+    width: 25%;
+    height: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #b2b8ad;
+    border-radius: 5px;
+    margin-left: 360px;
+    letter-spacing: 3px;
+    color: #b2b8ad;
+    cursor: pointer;
+}
+
+.btn2 {
+    width: 25%;
+    height: 100%;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px solid #b2b8ad;
+    border-radius: 5px;
+    margin-left: 45px;
+    letter-spacing: 3px;
+    color: #b2b8ad;
+    cursor: pointer;
+}
+
+.btn1.active, .btn2.active {
+    background-color: #aec663;
+    color: white;
+    border-color: black;
+}
+
+.as2 {
+    width: 23%;
+    height: 70px;
+    margin-top: 0.1%;
+    margin-left: 0.5%;
+    border: 1px solid white;
+}
+
+.myButton {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 14px -3px #f2fadc;
+    background: #dbe6c4 linear-gradient(to bottom, #dbe6c4 5%, #9ba892 100%);
+    border: 1px solid #b2b8ad;
+    display: inline-block;
+    cursor: pointer;
+    color: #444c43;
+    letter-spacing: 1px;
+    font-family: Arial, serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #ced9bf;
+}
+
+.myButton:hover {
+    background: #9ba892 linear-gradient(to bottom, #9ba892 5%, #dbe6c4 100%);
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/* modal style*/
+/* Modal oynani yashirin holatda boshlaymiz */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modalning ichki kontenti */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Yopish tugmasi */
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+.close:hover {
+    color: red;
+}
+
+/* Tugmalar uchun dizayn */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+@media (max-width: 1400px) {
+    .sec1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div1, .div2 {
+        width: 90%;
+        height: 180px;
+        margin-left: 0;
+    }
+
+    .sec2 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .as1 {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .as2 {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn1, .btn2 {
+        width: 45%;
+        margin: 5px;
+    }
+
+    .myButton {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .div1 {
+        width: 98%;
+        height: 185px;
+        margin-left: 10px;
+    }
+
+    .textarea1 {
+        width: 96%;
+        height: 150px;
+    }
+
+    .div2 {
+        width: 98%;
+        height: 185px;
+        margin-left: 10px;
+    }
+
+    .textarea2 {
+        width: 96%;
+        height: 150px;
+    }
+}
